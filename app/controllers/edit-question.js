@@ -8,11 +8,6 @@ export default Ember.Controller.extend({
       debugger;
       this.transitionToRoute('question', this.model);
     },
-    delete: function() {
-      if(confirm('Are you sure?')) {
-        this.get('model').destroyRecord();
-        this.transitionToRoute('questions');
-      }
-    }
+  
   }
 });
